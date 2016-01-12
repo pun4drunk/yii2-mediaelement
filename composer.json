@@ -1,5 +1,5 @@
 {
-    "name": "maksyutin/yii2-mediaelement",
+    "name": "pun4drunk/yii2-mediaelement",
     "description": "A complete HTML/CSS audio/video player built on top MediaElement.js and jQuery. For Yii2.",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","mediaelement","video player","videoplayer","audio player","audioplayer","html video","video"],
@@ -8,11 +8,15 @@
         {
             "name": "Maksyutin Dmitriy",
             "email": "maksyutin@yandex.ru"
+        },
+        {
+            "name": "Vladislav Waxme",
+            "email": "vlad.waxme@gmail.com"
         }
     ],
     "support": {
-		"issues": "https://github.com/maksyutin/yii2-mediaelement/issues?state=open",
-		"source": "https://github.com/maksyutin/yii2-mediaelement"
+		"issues": "https://github.com/pun4drunk/yii2-mediaelement/issues?state=open",
+		"source": "https://github.com/pun4drunk/yii2-mediaelement"
     },
     "require": {
 		"yiisoft/yii2": "~2.0"
