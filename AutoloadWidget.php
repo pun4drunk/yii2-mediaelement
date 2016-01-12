@@ -101,12 +101,12 @@ class AutoloadWidget extends \yii\base\Widget
         return $output;
     }
 
-    public function embed_video()
+    public function embed()
     {
 
         $output = '<div class="embed-responsive embed-responsive-16by9">';
 
-        $output .= Html::tag('video', '', [
+        $output .= Html::tag($this->tag, '', [
             'src' => $this->settings['mediafile'],
             'width' => $this->settings['width'],
             'height' => $this->settings['height'],
@@ -143,7 +143,7 @@ class AutoloadWidget extends \yii\base\Widget
         $output .= ($this->settings['title']) ? '<h4 class="modal-title" id="myModalLabel">' . $this->title . '</h4>' : ' ';
         $output .= '            </div>
                                 <div class="modal-body" id="mediaModal' . $this->id . '">';
-        $output .= $this->embed_video();
+        $output .= $this->embed();
         $output .= '            </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
@@ -157,7 +157,7 @@ class AutoloadWidget extends \yii\base\Widget
 
     public function view()
     {
-        $output = $this->embed_video();
+        $output = $this->embed();
         return $output;
     }
 
